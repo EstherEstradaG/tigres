@@ -8,9 +8,8 @@ import org.supercsv.prefs.CsvPreference;
 import java.io.*;
 import java.util.ArrayList;
 
-//Representa el modelo.
-
 public class AlumnosModel {
+
     private ArrayList<Alumnos> alumnos;
 
     public ArrayList<Alumnos> getAlumnos(){
@@ -36,10 +35,9 @@ public class AlumnosModel {
 
         final String[] header = beanReader.getHeader(true);
         final CellProcessor[] processors = new CellProcessor[] {
-                new NotNull(), // name
-                new NotNull(), // FavoritAnimal
+                new NotNull(), // nombre
+                new NotNull(), // cuenta
         };
-
 
         Alumnos alumno = null;
 
@@ -53,24 +51,25 @@ public class AlumnosModel {
         file = null;
     }
 
-    public void createAlumno(String nombre, String animalFavorito){
-        alumnos.add(new Alumnos(nombre,animalFavorito));
+    public void createAlumno(String nombre, String numeroCuenta){
+        alumnos.add(new Alumnos(nombre, numeroCuenta));
     }
 
-    public void updateAlumno(int index,String nombre,String animalFavorito){
-
+    public void updateAlumno(int index,String nombre,String numeroCuenta){
+        alumnos.set(index,new Alumnos(nombre,numeroCuenta));
     }
 
-    public ArrayList<Alumnos> readAlumos(int start, int end){
+    public void deleteAlumno(int index){
+        alumnos.remove(index);
+    }
+
+    public ArrayList<Alumnos> readAlumnos(int start, int end){
         return null;
     }
 
     public Alumnos readAlumno(int index){
+        System.out.println(alumnos.get(index));
         return null;
-    }
-
-    public void deleteAlumno(int index){
-
     }
 
     public void persist(){

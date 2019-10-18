@@ -3,7 +3,21 @@ package edu.ujcv.progra2;
 //pojo
 public class Alumnos {
     private String name;
-    private String favoritAnimal;
+    private String numeroCuenta;
+
+
+    public Alumnos(String name, String numeroCuenta) {
+        this.name = name;
+        this.numeroCuenta = numeroCuenta;
+    }
+
+    public Alumnos() {
+
+    }
+
+    public String toString() {
+        return name + ",\t" + numeroCuenta;
+    }
 
     public String getName() {
         return name;
@@ -13,25 +27,11 @@ public class Alumnos {
         this.name = name;
     }
 
-    public String getFavoritAnimal() {
-        return favoritAnimal;
+    public String getNumeroCuenta() {
+        return numeroCuenta;
     }
 
-    public void setFavoritAnimal(String favoritAnimal) {
-        this.favoritAnimal = favoritAnimal;
-    }
-
-    public Alumnos(String name, String favoritAnimal){
-        this.name = name;
-        this.favoritAnimal = favoritAnimal;
-    }
-
-    public Alumnos()
-    {
-
-    }
-
-    public String toString(){
-        return name+",\t"+favoritAnimal;
+    public void setNumeroCuenta(String numeroCuenta) {
+        this.numeroCuenta = numeroCuenta;
     }
 }

@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="csv">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Desktop/csv/super-csv" />
+      <root url="file://$USER_HOME$/Desktop/csv/super-csv-dozer" />
+      <root url="file://$USER_HOME$/Desktop/csv/super-csv-java8" />
+      <root url="file://$USER_HOME$/Desktop/csv/super-csv-joda" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$USER_HOME$/Desktop/csv" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Desktop/csv/super-csv" />
+      <root url="file://$USER_HOME$/Desktop/csv/super-csv-dozer" />
+      <root url="file://$USER_HOME$/Desktop/csv/super-csv-java8" />
+      <root url="file://$USER_HOME$/Desktop/csv/super-csv-joda" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Desktop/csv/super-csv" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/csv/super-csv-dozer" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/csv/super-csv-java8" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/csv/super-csv-joda" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/csv/super-csv" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/csv/super-csv-dozer" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/csv/super-csv-java8" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/csv/super-csv-joda" recursive="false" type="SOURCES" />
+  </library>
+</component>
