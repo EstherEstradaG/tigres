@@ -54,10 +54,10 @@ public class MaestrosController {
                     }
                     break;
                     case 4:{
-                        String nombre = new String();
+                        String name = new String();
                         String clase = new String();
-                        int index = 1;
-                        model.updateMaestro(index, nombre, clase);
+                        int index = sc.nextInt();
+                        model.updateMaestro(index, name, clase);
                     }
                     case 5: {
                     //controller.Clear();

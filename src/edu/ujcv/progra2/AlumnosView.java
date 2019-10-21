@@ -11,7 +11,6 @@ public class AlumnosView {
         System.out.println("1. ver alumnos");
         System.out.println("2. agregar alumno");
         System.out.println("3. eliminar alumno");
-        System.out.println("4. modificar alumno");
         System.out.println("0.salir");
         System.out.println("ingrese su opcion");
 

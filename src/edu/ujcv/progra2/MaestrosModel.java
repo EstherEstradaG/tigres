@@ -1,14 +1,13 @@
 package edu.ujcv.progra2;
 
-import org.supercsv.cellprocessor.constraint.NotNull;
-import org.supercsv.cellprocessor.ift.CellProcessor;
-import org.supercsv.io.CsvBeanReader;
-import org.supercsv.prefs.CsvPreference;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import org.supercsv.cellprocessor.constraint.NotNull;
+import org.supercsv.cellprocessor.ift.CellProcessor;
+import org.supercsv.io.CsvBeanReader;
+import org.supercsv.prefs.CsvPreference;
 
 public class MaestrosModel {
 
@@ -39,8 +38,8 @@ public class MaestrosModel {
 
             final String[] header = beanReader.getHeader(true);
             final CellProcessor[] processors = new CellProcessor[] {
-                    new NotNull(), // nombre
-                    new NotNull(), // clase
+                    new NotNull(), // name
+                    new NotNull(), // classes
             };
 
             Maestros maestro = null;
@@ -55,12 +54,12 @@ public class MaestrosModel {
             f = null;
         }
 
-        public void createMaestro(String nombre, String clase){
-            maestros.add(new Maestros(nombre, clase));
+        public void createMaestro(String name, String classes){
+            maestros.add(new Maestros(name, classes));
         }
 
-        public void updateMaestro(int index,String nombre,String clase){
-            maestros.set(index, new Maestros(nombre, clase));
+        public void updateMaestro(int index,String name,String classes){
+            maestros.set(index, new Maestros(name, classes));
         }
 
         public ArrayList<Maestros> readMaestro(int start, int end){

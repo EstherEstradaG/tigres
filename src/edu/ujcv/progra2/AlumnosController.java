@@ -54,7 +54,7 @@ import java.util.Scanner;
                 default: {
             }
         }
-    }while (opcion!= 5);
+    }while (opcion != 0);
 
 
 

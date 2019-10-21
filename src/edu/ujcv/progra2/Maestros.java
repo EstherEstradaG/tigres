@@ -1,13 +1,14 @@
 package edu.ujcv.progra2;
 
+import java.util.ArrayList;
+
 public class Maestros {
     private String name;
-    private String clase;
+    private String classes;
 
-
-    public Maestros(String name, String clase) {
+    public Maestros(String name, String classes) {
         this.name = name;
-        this.clase = clase;
+        this.classes = classes;
     }
 
     public Maestros() {
@@ -16,7 +17,7 @@ public class Maestros {
 
     public String toString() {
 
-        return name + ",\t" + clase;
+        return name + ",\t" + classes;
     }
 
     public String getName() {
@@ -31,12 +32,11 @@ public class Maestros {
 
     public String getClase() {
 
-        return clase;
+        return classes;
     }
 
-    public void setClase(String clase) {
-
-        this.clase = clase;
+    public void setClase(String classes){
+        this.classes = classes;
     }
 }
 

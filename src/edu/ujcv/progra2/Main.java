@@ -14,8 +14,8 @@ public class Main {
         System.out.println("Menus disponible");
         System.out.println("1. Menu de Alumnos");
         System.out.println("2. Menu de Maestros");
-        System.out.println("3. Menu de Clases y Horarios");
         int opcion = sc.nextInt();
+
 
         if (opcion == 1) {
             AlumnosController ac = new AlumnosController();

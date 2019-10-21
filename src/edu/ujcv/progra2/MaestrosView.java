@@ -30,7 +30,7 @@ public class MaestrosView {
 
     void verLista(ArrayList<Maestros> maestros){
         System.out.println("\t\tMaestros:");
-        System.out.println("#,\tnombre, \tclase");
+        System.out.println("#,\tnombre, \tclasses");
         int i = 1;
         for (Maestros maestro : maestros){
             System.out.println(""+(i++)+"\t"+maestro);
